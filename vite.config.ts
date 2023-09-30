@@ -14,12 +14,21 @@ export default defineConfig({
   base: './',
   resolve: {
     alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url))
+        '@': fileURLToPath(new URL('src', import.meta.url))
     }
   },
   server: {
     hmr: {
       overlay: false
     }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {},
+    },
+  },
+  optimizeDeps: {
+    exclude: ['vuetify'],
+    entries: ['./src/**/*.vue'],
   }
 })

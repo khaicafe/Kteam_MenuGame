@@ -165,7 +165,7 @@ const quickLink: quickLinksType[] = [
     },
     {
         title: '404 Error Page',
-        href: '/auth/404'
+        href: '/auth/login'
     },
     {
         title: 'Notes App',

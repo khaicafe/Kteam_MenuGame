@@ -8,7 +8,8 @@ function fakeBackend() {
             // wrap in timeout to simulate server api call
             setTimeout(handleRoute, 500);
 
-            function handleRoute() {
+            function handleRoute() { 
+                console.log('url', url)
                 switch (true) {
                     case url.endsWith('/users/authenticate') && opts.method === 'POST':
                         return authenticate();
