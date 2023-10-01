@@ -1,5 +1,10 @@
 # Vite+Vue3+Electron+Typescript template
 
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+start open ssh trong service
+ssh-add
+start-ssh-agent
+
 ![screenshot](./src/assets/screenshot.png)
 
 ## Get Started
